@@ -1,0 +1,28 @@
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+secrets/
+credentials/
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local tools and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs, dependencies, and generated output
+*.log
+node_modules/
+dist/
+build/
+coverage/
+
