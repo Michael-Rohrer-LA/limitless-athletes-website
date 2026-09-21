@@ -259,6 +259,7 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
     <div class="hero-cta">
       <a href="#buchen" class="btn btn-primary">Angebote</a>
       <a href="#system" class="btn btn-ghost">So arbeite ich</a>
+      <a href="morning-tool.html" class="btn btn-ghost">Morgen-Tool</a>
     </div>
   </div>
 </section>
@@ -358,13 +359,13 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
           <h3>Kostenloses Erstgespräch</h3>
           <p>Für Athleten, die herausfinden wollen, ob die Limitless Begleitung passt.</p>
         </button>
-        <button class="booking-option" type="button" data-cal-target="personaltraining" data-cal-url="https://cal.com/michaelrohrer/ersttermin-perosnaltraining-150-chf">
-          <div class="k">Personal Training · 150 CHF</div>
+        <button class="booking-option" type="button" data-cal-target="personaltraining" data-cal-url="https://cal.com/michaelrohrer/ersttermin-personal-training">
+          <div class="k">Personal Training</div>
           <h3>Ersttermin Personal Training</h3>
           <p>Für bestehende oder entschlossene Athleten, die direkt einen Termin fixieren wollen.</p>
         </button>
-        <button class="booking-option" type="button" data-cal-target="athletiktest" data-cal-url="https://cal.com/michaelrohrer/athletiktestx-150-chf">
-          <div class="k">Athletiktest · 150 CHF</div>
+        <button class="booking-option" type="button" data-cal-target="athletiktest" data-cal-url="https://cal.com/michaelrohrer/athletiktest">
+          <div class="k">Athletiktest</div>
           <h3>Athletiktest</h3>
           <p>Für Athleten, die ihren aktuellen Stand messen und eine klare Auswertung wollen.</p>
         </button>
@@ -372,8 +373,8 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
       <div>
         <div class="booking-frame">
           <div class="cal-inline" id="my-cal-inline-kostenloses-telefongesprach-fur-allfallige-fragen"></div>
-          <div class="cal-inline is-hidden" id="my-cal-inline-ersttermin-perosnaltraining-150-chf"></div>
-          <div class="cal-inline is-hidden" id="my-cal-inline-athletiktestx-150-chf"></div>
+          <div class="cal-inline is-hidden" id="my-cal-inline-ersttermin-personal-training"></div>
+          <div class="cal-inline is-hidden" id="my-cal-inline-athletiktest"></div>
         </div>
         <p class="booking-fallback">Falls der Kalender nicht lädt: <a id="caldirect" href="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen" target="_blank" rel="noopener">Buchung in Cal.com öffnen</a></p>
       </div>
@@ -391,7 +392,7 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
         <blockquote>„Als Jungschwinger war ich physisch unterlegen, und irgendwann habe ich fast aufgehört, <span class="grad-text">an mich zu glauben.</span>"</blockquote>
         <p>Mit 16 kam die Kehrtwende: Ein Mensch trat in mein Leben, der zum ersten Mal wirklich an mich geglaubt hat. Das hat alles verändert. Aus Hoffnungslosigkeit wurde Zuversicht. Aus Zweifel wurde ein Weg.</p>
         <p>Heute will ich genau dieser Mensch für andere sein. Einer, der an dich glaubt, dir Klarheit gibt und dir hilft, deine Ziele nicht nur gross zu denken, sondern Schritt für Schritt zu erreichen.</p>
-        <p>Limitless verbindet diese Haltung mit einem klaren System: Athletiktest, individueller Trainingsplan und persönliche Begleitung. Damit du nicht einfach mehr trainierst, sondern mit Vertrauen, Struktur und Richtung an deinen Traum gehst.</p>
+        <p>Limitless Athletes verbindet diese Haltung mit einem klaren System: Athletiktest, individueller Trainingsplan und persönliche Begleitung. Damit du nicht einfach mehr trainierst, sondern mit Vertrauen, Struktur und Richtung an deinen Traum gehst.</p>
         <div class="sign">Michael Rohrer<span>Gründer · Limitless Athletes</span></div>
       </div>
     </div>
@@ -403,7 +404,7 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
   <div class="cta-bg"><img src="images/kill-your-excuses.jpg" alt="Limitless Athletes"></div>
   <div class="wrap cta-inner reveal">
     <h2 class="display">Bereit, deine Grenzen zu verschieben?</h2>
-    <p>Vereinbare ein unverbindliches Erstgespräch. Wir schauen, wo du stehst, und ob Limitless der richtige Weg für dich ist.</p>
+    <p>Vereinbare ein unverbindliches Erstgespräch. Wir schauen, wo du stehst, und ob Limitless Athletes der richtige Weg für dich ist.</p>
     <div class="cta-row">
       <a href="#buchen" class="btn btn-primary">Buchen</a>
     </div>
@@ -447,14 +448,14 @@ const calEvents={
     calLink:"michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen"
   },
   personaltraining:{
-    namespace:"ersttermin-perosnaltraining-150-chf",
-    selector:"#my-cal-inline-ersttermin-perosnaltraining-150-chf",
-    calLink:"michaelrohrer/ersttermin-perosnaltraining-150-chf"
+    namespace:"ersttermin-personal-training",
+    selector:"#my-cal-inline-ersttermin-personal-training",
+    calLink:"michaelrohrer/ersttermin-personal-training"
   },
   athletiktest:{
-    namespace:"athletiktestx-150-chf",
-    selector:"#my-cal-inline-athletiktestx-150-chf",
-    calLink:"michaelrohrer/athletiktestx-150-chf"
+    namespace:"athletiktest",
+    selector:"#my-cal-inline-athletiktest",
+    calLink:"michaelrohrer/athletiktest"
   }
 };
 function loadCalEvent(key){
