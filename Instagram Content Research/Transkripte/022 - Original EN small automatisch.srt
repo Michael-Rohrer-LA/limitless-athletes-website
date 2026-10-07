@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:22,120
+ down, good, up, good, let's go two more, ready, down, that's a slob, up, ready, fall, hold,
+
+2
+00:00:22,120 --> 00:00:30,660
+ good, good, red, and don't jump, jump, jump, stick, easy, down.
+
