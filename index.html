@@ -160,13 +160,15 @@ section{position:relative}
 .booking-step .k{font-family:'Oswald';text-transform:uppercase;letter-spacing:1.5px;font-size:12px;color:var(--green);margin-bottom:6px}
 .booking-step strong{display:block;font-family:'Oswald';font-size:18px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
 .booking-step span{color:var(--muted);font-size:14px;line-height:1.45}
-.booking-options{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.booking-option{width:100%;min-height:154px;text-align:left;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);padding:20px;cursor:pointer;transition:.25s ease}
-.booking-option:hover,.booking-option.active{border-color:rgba(55,217,96,.6);background:linear-gradient(180deg,var(--bg-3),var(--bg))}
-.booking-option .k{font-family:'Oswald';text-transform:uppercase;letter-spacing:1.5px;font-size:12px;color:var(--green);margin-bottom:7px}
-.booking-option h3{font-family:'Oswald';text-transform:uppercase;letter-spacing:.7px;font-size:19px;margin-bottom:7px;line-height:1.15}
-.booking-option p{color:var(--muted);font-size:14px;line-height:1.45}
-.booking-frame{border:1px solid rgba(55,217,96,.25);border-radius:10px;overflow:hidden;background:var(--bg);min-height:690px;box-shadow:0 20px 58px rgba(0,0,0,.34)}
+.booking-answers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.booking-answer{padding:22px 20px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(180deg,rgba(17,21,18,.9),rgba(10,13,11,.94));}
+.booking-answer .k{font-family:'Oswald';text-transform:uppercase;letter-spacing:1.5px;font-size:12px;color:var(--green);margin-bottom:10px}
+.booking-answer h3{font-family:'Oswald';text-transform:uppercase;letter-spacing:.6px;font-size:18px;margin-bottom:8px}
+.booking-answer p{color:var(--muted);font-size:14px;line-height:1.6}
+.booking-primary{text-align:center;margin-top:32px}
+.booking-primary .btn{padding:20px 38px}
+.booking-cta-meta{margin-top:12px;color:var(--muted);font-size:14px}
+.booking-frame{border:1px solid rgba(55,217,96,.25);border-radius:10px;overflow:hidden;background:var(--bg);min-height:690px;box-shadow:0 20px 58px rgba(0,0,0,.34);margin-top:24px}
 .cal-inline{width:100%;height:690px;overflow:scroll;background:var(--bg)}
 .is-hidden{display:none}
 .booking-fallback{margin-top:14px;color:var(--muted);font-size:14px}
@@ -366,28 +368,40 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
     <div class="reveal">
       <div class="eyebrow">Direkt buchen</div>
       <h2 class="display booking-title">So beginnt der Weg</h2>
-      <p class="sub">Dein Weg beginnt beim Erstgespräch. Danach schauen wir zusammen, ob und wie wir weiterarbeiten.</p>
+      <p class="sub">Dein Weg beginnt beim Erstgespräch. Danach schauen wir zusammen, ob und wie wir weiterarbeiten. Du bekommst eine klare Antwort, ohne dich zu irgendeinem Paket zu verpflichten.</p>
       <div class="booking-flow" aria-label="Ablauf">
         <div class="booking-step"><div class="k">1 · Erstgespräch</div><strong>Kostenlos</strong><span>30 Minuten per Google Meet.</span></div>
         <div class="booking-step"><div class="k">2 · Entscheiden</div><strong>Klärung</strong><span>Wir schauen, ob und wie wir gemeinsam weiterarbeiten.</span></div>
         <div class="booking-step"><div class="k">3 · Coaching</div><strong>Begleitung</strong><span>Individueller Leistungsaufbau mit klarer Struktur.</span></div>
       </div>
-    </div>
-    <div class="booking-grid reveal">
-      <div class="booking-options" aria-label="Buchungsoptionen">
-        <button class="booking-option active" type="button" data-cal-target="erstgespraech" data-cal-url="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen">
-          <div class="k">Kostenlos</div>
-          <h3>Kostenloses Erstgespräch</h3>
-          <p>30 Minuten per Google Meet. Wir klären deine Ziele, deinen Hintergrund und ob die Zusammenarbeit passt.</p>
-        </button>
-      </div>
-      <div>
-        <div class="booking-frame">
-          <div class="cal-inline" id="my-cal-inline-kostenloses-telefongesprach-fur-allfallige-fragen"></div>
+      <div class="booking-answers" aria-label="Wichtige Fragen">
+        <div class="booking-answer">
+          <div class="k">Ist das wirklich kostenlos?</div>
+          <h3>Ja.</h3>
+          <p>Das erste Gespräch ist kostenlos. Es dient dazu, zu schauen, ob die Zusammenarbeit wirklich sinnvoll ist.</p>
         </div>
-        <p class="booking-fallback">Nach dem Erstgespräch schauen wir gemeinsam, ob und wie ein separates Probetraining sinnvoll ist.</p>
-        <p class="booking-fallback">Falls der Kalender nicht lädt: <a id="caldirect" href="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen" target="_blank" rel="noopener">Buchung in Cal.com öffnen</a></p>
+        <div class="booking-answer">
+          <div class="k">Bin ich gebunden?</div>
+          <h3>Nein.</h3>
+          <p>Du wirst zu nichts verpflichtet. Wenn es nicht passt, ist das völlig in Ordnung.</p>
+        </div>
+        <div class="booking-answer">
+          <div class="k">Was passiert danach?</div>
+          <h3>Wir klären es.</h3>
+          <p>Nach dem Gespräch entscheiden wir gemeinsam, ob ein separater Weg sinnvoll ist und was danach folgt.</p>
+        </div>
       </div>
+      <div class="booking-primary">
+        <a href="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen" class="btn btn-primary" target="_blank" rel="noopener">Kostenloses Erstgespräch buchen</a>
+        <p class="booking-cta-meta">30 Minuten · Google Meet · keine Verpflichtung</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="booking-frame">
+        <div class="cal-inline" id="my-cal-inline-kostenloses-telefongesprach-fur-allfallige-fragen"></div>
+      </div>
+      <p class="booking-fallback">Nach dem Erstgespräch schauen wir gemeinsam, ob und wie ein separates Probetraining sinnvoll ist.</p>
+      <p class="booking-fallback">Falls der Kalender nicht lädt: <a id="caldirect" href="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen" target="_blank" rel="noopener">Buchung in Cal.com öffnen</a></p>
     </div>
   </div>
 </section>
