@@ -360,32 +360,6 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
   </div>
 </section>
 
-<section class="sec pdf-section" id="downloads">
-  <div class="wrap">
-    <div class="reveal">
-      <div class="eyebrow">Für dich</div>
-      <h2 class="display booking-title">Zwei kurze Trainings-Impulse für deinen Alltag</h2>
-      <p class="sub">Wenn du gerade etwas Praxis willst: hier sind zwei kurze Trainings, die du direkt nutzen kannst. Kein Ballast, kein Marketing, nur ein schneller Nutzen.</p>
-    </div>
-    <div class="pdf-grid reveal" style="grid-template-columns:1fr; max-width:760px; margin:42px auto 0;">
-      <div class="pdf-card">
-        <h3>Home Workout</h3>
-        <p>Ein effektives Training für Zuhause, ohne Geräte oder Coaching-Setup.</p>
-        <button class="btn btn-primary" type="button" data-pdf="output/pdf/Limitless-Athletes-Home-Workout.pdf">Download</button>
-      </div>
-    </div>
-    <div class="pdf-card reveal" style="margin-top:22px;max-width:760px;margin-left:auto;margin-right:auto;">
-      <h3 style="margin-top:0">Los geht's</h3>
-      <form class="pdf-form" id="pdfForm">
-        <input type="email" id="pdfEmail" placeholder="E-Mail-Adresse eingeben" required>
-        <label><input type="checkbox" id="pdfTips" checked> Ja, ich möchte gelegentlich weitere Tipps per E-Mail erhalten.</label>
-        <button class="btn btn-primary" type="submit">Kostenlos herunterladen</button>
-      </form>
-      <div class="pdf-status" id="pdfStatus" aria-live="polite"></div>
-    </div>
-  </div>
-</section>
-
 <!-- BOOKING -->
 <section class="sec booking" id="buchen">
   <div class="wrap">
@@ -510,42 +484,6 @@ document.querySelectorAll('.booking-option').forEach(btn=>btn.addEventListener('
   caldirect.href=url;
 }));
 
-const pdfForm=document.getElementById('pdfForm');
-const pdfEmail=document.getElementById('pdfEmail');
-const pdfStatus=document.getElementById('pdfStatus');
-let selectedPdf = 'output/pdf/Limitless-Athletes-Home-Workout.pdf';
-
-document.querySelectorAll('[data-pdf]').forEach(btn=>btn.addEventListener('click',()=>{
-  selectedPdf = btn.dataset.pdf;
-  pdfStatus.textContent = 'Bitte E-Mail eingeben und dann herunterladen.';
-  pdfEmail.focus();
-}));
-
-pdfForm.addEventListener('submit', (event)=>{
-  event.preventDefault();
-  const email=pdfEmail.value.trim();
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-    pdfStatus.textContent = 'Bitte gib eine gültige E-Mail-Adresse ein.';
-    pdfEmail.focus();
-    return;
-  }
-  const wantsTips=document.getElementById('pdfTips').checked;
-  if (wantsTips) {
-    localStorage.setItem('limitless-pdf-tips-email', email);
-  } else {
-    localStorage.removeItem('limitless-pdf-tips-email');
-  }
-  const a=document.createElement('a');
-  a.href=selectedPdf;
-  a.download = selectedPdf.split('/').pop();
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  pdfStatus.textContent = 'Download gestartet. Vielen Dank!';
-  pdfForm.reset();
-  document.getElementById('pdfTips').checked = true;
-  selectedPdf = 'output/pdf/Limitless-Athletes-Home-Workout.pdf';
-}));
 // reveal
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>{el.classList.add('in');io.observe(el);});
