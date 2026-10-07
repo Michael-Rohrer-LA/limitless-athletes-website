@@ -166,6 +166,18 @@ section{position:relative}
 .is-hidden{display:none}
 .booking-fallback{margin-top:14px;color:var(--muted);font-size:14px}
 .booking-fallback a{color:var(--green-bright)}
+.pdf-section{background:var(--bg);border-top:1px solid var(--line)}
+.pdf-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:42px;align-items:flex-start}
+.pdf-card{border:1px solid var(--line);border-radius:14px;padding:28px;background:linear-gradient(180deg,var(--bg-3),var(--bg-2));}
+.pdf-card h3{font-family:'Oswald';text-transform:uppercase;letter-spacing:1px;font-size:22px;margin-bottom:10px}
+.pdf-card p{color:var(--muted);font-size:15px;margin-bottom:18px}
+.pdf-card button{width:100%;text-align:center;justify-content:center}
+.pdf-form{display:grid;gap:16px;margin-top:18px}
+.pdf-form input[type="email"]{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:8px;padding:14px 16px;color:var(--ink);font:inherit}
+.pdf-form input[type="email"]::placeholder{color:#a1a9a1}
+.pdf-form label{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px;line-height:1.4}
+.pdf-form input[type="checkbox"]{accent-color:var(--green)}
+.pdf-status{min-height:24px;color:var(--green-bright);font-size:14px;margin-top:8px}
 
 /* ---------- story ---------- */
 .story{background:var(--bg-2);border-top:1px solid var(--line)}
@@ -254,12 +266,11 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
   <div class="kye">Kill Your Excuses</div>
   <div class="wrap hero-inner">
     <div class="hero-tag">Athletiktraining · Zentralschweiz</div>
-    <h1 class="display">Leistungs­entwicklung<br><span class="hero-line">für <em class="grad-text">ambitionierte Sportler.</em></span></h1>
-    <p class="lead">Ich weiss, wie es ist, an sich selbst zu zweifeln, und wie viel sich verändert, wenn jemand wirklich an dich glaubt.<span class="lead-break">Genau diese Zuversicht gebe ich dir weiter: mit klarer Struktur, persönlicher Begleitung und einem Plan, der dich Schritt für Schritt stärker macht.</span></p>
+    <h1 class="display">Leistungs­entwicklung<br><span class="hero-line">für <em class="grad-text">erwachsene Wettkampfsportler.</em></span></h1>
+    <p class="lead">Für Schwingen, Ringen, Judo und andere Kampf- und Wettkampfsportarten. Ich helfe dir, mit klarer Struktur, persönlicher Begleitung und einem zielgerichteten Plan deinen nächsten Leistungslevel zu erreichen.<span class="lead-break">Nicht durch Zufall, sondern durch ein System, das zu deinem Sport und zu deinem Werdegang passt.</span></p>
     <div class="hero-cta">
       <a href="#buchen" class="btn btn-primary">Angebote</a>
       <a href="#system" class="btn btn-ghost">So arbeite ich</a>
-      <a href="morning-tool.html" class="btn btn-ghost">Morgen-Tool</a>
     </div>
   </div>
 </section>
@@ -280,12 +291,12 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
   <div class="wrap">
     <div class="reveal">
       <div class="eyebrow">Für wen</div>
-      <h2 class="display who-title">Für ambitionierte Sportler</h2>
+      <h2 class="display who-title">Für erwachsene Wettkampfsportler</h2>
     </div>
     <div class="who-grid reveal">
-      <div class="who"><div class="ic">01</div><h3>Du stagnierst</h3><p>Seit Monaten kommst du nicht weiter, obwohl du hart und viel trainierst. Das ist kein Motivationsproblem, sondern ein Strukturproblem.</p></div>
-      <div class="who"><div class="ic">02</div><h3>Du willst Resultate sehen</h3><p>Messbare, sichtbare Fortschritte in Kraft, Explosivität und Stabilität, statt Training nach Bauchgefühl.</p></div>
-      <div class="who"><div class="ic">03</div><h3>Du meinst es ernst</h3><p>Du bist bereit, einem klaren Plan zu folgen.</p></div>
+      <div class="who"><div class="ic">01</div><h3>Du stagnierst</h3><p>Du trainierst viel, aber die Fortschritte bleiben aus. Im Wettkampfsport zählt nicht nur Einsatz, sondern die richtige Struktur und die richtige Belastung.</p></div>
+      <div class="who"><div class="ic">02</div><h3>Du willst Resultate sehen</h3><p>Messbare Fortschritte in Kraft, Explosivität, Belastbarkeit und Transfer auf den Wettkampf, statt Training nach Bauchgefühl.</p></div>
+      <div class="who"><div class="ic">03</div><h3>Du bist bereit</h3><p>Du bist erwachsen, ambitioniert und willst mit einem klaren Plan wirklich an deinen sportlichen Zielen arbeiten.</p></div>
     </div>
   </div>
 </section>
@@ -329,17 +340,48 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
     <div class="offer-card reveal">
       <div class="offer-body">
         <ul class="ig">
-          <li>Persönliche Begleitung und laufende Anpassung</li>
-          <li>Regelmässige Leistungstests und Auswertung</li>
-          <li>Individueller und strukturierter Plan</li>
-          <li>Fokus auf Kraft, Explosivität und Stabilität</li>
-          <li>Plan, Videos und Fortschritte in einer App</li>
+          <li>Persönliche Begleitung für Wettkampfsportler</li>
+          <li>Strukturierter Leistungsaufbau mit klaren Zielen</li>
+          <li>Einzelne, sportartspezifische Trainingslogik</li>
+          <li>Fokus auf Kraft, Explosivität, Belastbarkeit und Transfer</li>
+          <li>Verlässlicher, professioneller Weg von Erstgespräch zu Coaching</li>
         </ul>
       </div>
       <div class="offer-foot">
         <a href="#buchen" class="btn btn-primary">Erstgespräch vereinbaren</a>
-        <p>Wie deine Betreuung konkret aussieht, legen wir gemeinsam im Gespräch fest.</p>
+        <p>Der öffentliche Einstieg ist das kostenlose Erstgespräch. Danach vereinbaren wir ein separates Probetraining.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec pdf-section" id="downloads">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Kostenlose Downloads</div>
+      <h2 class="display booking-title">Zwei kurze Trainings-PDFs für deinen Alltag</h2>
+      <p class="sub">Erhalte direkt ein praktisches Training und nutze den unkomplizierten Download mit E-Mail-Erfassung. Die Anmeldung für weitere Tipps ist freiwillig.</p>
+    </div>
+    <div class="pdf-grid reveal">
+      <div class="pdf-card">
+        <h3>Home Workout</h3>
+        <p>Ein effektives Training für Zuhause, ohne Geräte oder Coaching-Setup.</p>
+        <button class="btn btn-primary" type="button" data-pdf="output/pdf/Limitless-Athletes-Home-Workout.pdf">PDF herunterladen</button>
+      </div>
+      <div class="pdf-card">
+        <h3>Gym Workout</h3>
+        <p>Ein strukturiertes Kraft- und Athletik-Programm für das Gym.</p>
+        <button class="btn btn-primary" type="button" data-pdf="output/pdf/Limitless-Athletes-Gym-Workout.pdf">PDF herunterladen</button>
+      </div>
+    </div>
+    <div class="pdf-card reveal" style="margin-top:22px;max-width:760px;">
+      <h3 style="margin-top:0">Download starten</h3>
+      <form class="pdf-form" id="pdfForm">
+        <input type="email" id="pdfEmail" placeholder="E-Mail-Adresse eingeben" required>
+        <label><input type="checkbox" id="pdfTips" checked> Ja, ich möchte gelegentlich weitere Tipps per E-Mail erhalten.</label>
+        <button class="btn btn-primary" type="submit">Kostenlos herunterladen</button>
+      </form>
+      <div class="pdf-status" id="pdfStatus" aria-live="polite"></div>
     </div>
   </div>
 </section>
@@ -349,33 +391,22 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
   <div class="wrap">
     <div class="reveal">
       <div class="eyebrow">Direkt buchen</div>
-      <h2 class="display booking-title">Wähle deinen nächsten Schritt</h2>
-      <p class="sub">Buche dein unverbindliches Erstgespräch, einen Trainingstermin oder den Athletiktest direkt im Kalender.</p>
+      <h2 class="display booking-title">So läuft der Einstieg</h2>
+      <p class="sub">Der öffentliche Buchungsweg ist bewusst einfach: kostenloses Erstgespräch, dann getrenntes Probetraining, danach Coaching.</p>
     </div>
     <div class="booking-grid reveal">
       <div class="booking-options" aria-label="Buchungsoptionen">
         <button class="booking-option active" type="button" data-cal-target="erstgespraech" data-cal-url="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen">
           <div class="k">Kostenlos</div>
           <h3>Kostenloses Erstgespräch</h3>
-          <p>Für Athleten, die herausfinden wollen, ob die Limitless Begleitung passt.</p>
-        </button>
-        <button class="booking-option" type="button" data-cal-target="personaltraining" data-cal-url="https://cal.com/michaelrohrer/ersttermin-personal-training">
-          <div class="k">Personal Training</div>
-          <h3>Ersttermin Personal Training</h3>
-          <p>Für bestehende oder entschlossene Athleten, die direkt einen Termin fixieren wollen.</p>
-        </button>
-        <button class="booking-option" type="button" data-cal-target="athletiktest" data-cal-url="https://cal.com/michaelrohrer/athletiktest">
-          <div class="k">Athletiktest</div>
-          <h3>Athletiktest</h3>
-          <p>Für Athleten, die ihren aktuellen Stand messen und eine klare Auswertung wollen.</p>
+          <p>30 Minuten per Google Meet. Wir klären deine Ziele, deinen Hintergrund und ob die Zusammenarbeit passt.</p>
         </button>
       </div>
       <div>
         <div class="booking-frame">
           <div class="cal-inline" id="my-cal-inline-kostenloses-telefongesprach-fur-allfallige-fragen"></div>
-          <div class="cal-inline is-hidden" id="my-cal-inline-ersttermin-personal-training"></div>
-          <div class="cal-inline is-hidden" id="my-cal-inline-athletiktest"></div>
         </div>
+        <p class="booking-fallback">Nach dem Erstgespräch vereinbaren wir ein separates Probetraining. Dieses dauert 90 Minuten und kostet CHF 150 vorab, inklusive Eintritt.</p>
         <p class="booking-fallback">Falls der Kalender nicht lädt: <a id="caldirect" href="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen" target="_blank" rel="noopener">Buchung in Cal.com öffnen</a></p>
       </div>
     </div>
@@ -446,16 +477,6 @@ const calEvents={
     namespace:"kostenloses-telefongesprach-fur-allfallige-fragen",
     selector:"#my-cal-inline-kostenloses-telefongesprach-fur-allfallige-fragen",
     calLink:"michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen"
-  },
-  personaltraining:{
-    namespace:"ersttermin-personal-training",
-    selector:"#my-cal-inline-ersttermin-personal-training",
-    calLink:"michaelrohrer/ersttermin-personal-training"
-  },
-  athletiktest:{
-    namespace:"athletiktest",
-    selector:"#my-cal-inline-athletiktest",
-    calLink:"michaelrohrer/athletiktest"
   }
 };
 function loadCalEvent(key){
@@ -479,6 +500,43 @@ document.querySelectorAll('.booking-option').forEach(btn=>btn.addEventListener('
   document.querySelectorAll('.cal-inline').forEach(el=>el.classList.toggle('is-hidden',el.id!==`my-cal-inline-${calEvents[target].namespace}`));
   loadCalEvent(target);
   caldirect.href=url;
+}));
+
+const pdfForm=document.getElementById('pdfForm');
+const pdfEmail=document.getElementById('pdfEmail');
+const pdfStatus=document.getElementById('pdfStatus');
+let selectedPdf = 'output/pdf/Limitless-Athletes-Home-Workout.pdf';
+
+document.querySelectorAll('[data-pdf]').forEach(btn=>btn.addEventListener('click',()=>{
+  selectedPdf = btn.dataset.pdf;
+  pdfStatus.textContent = 'Bitte E-Mail eingeben und dann herunterladen.';
+  pdfEmail.focus();
+}));
+
+pdfForm.addEventListener('submit', (event)=>{
+  event.preventDefault();
+  const email=pdfEmail.value.trim();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    pdfStatus.textContent = 'Bitte gib eine gültige E-Mail-Adresse ein.';
+    pdfEmail.focus();
+    return;
+  }
+  const wantsTips=document.getElementById('pdfTips').checked;
+  if (wantsTips) {
+    localStorage.setItem('limitless-pdf-tips-email', email);
+  } else {
+    localStorage.removeItem('limitless-pdf-tips-email');
+  }
+  const a=document.createElement('a');
+  a.href=selectedPdf;
+  a.download = selectedPdf.split('/').pop();
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  pdfStatus.textContent = 'Download gestartet. Vielen Dank!';
+  pdfForm.reset();
+  document.getElementById('pdfTips').checked = true;
+  selectedPdf = 'output/pdf/Limitless-Athletes-Home-Workout.pdf';
 }));
 // reveal
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
