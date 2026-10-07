@@ -155,6 +155,11 @@ section{position:relative}
 .sec.booking{padding:90px 0}
 .booking-title{max-width:none;white-space:nowrap}
 .booking-grid{display:grid;gap:22px;margin-top:38px}
+.booking-flow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.booking-step{border:1px solid var(--line);border-radius:10px;padding:18px 20px;background:linear-gradient(180deg,var(--bg-3),var(--bg-2));}
+.booking-step .k{font-family:'Oswald';text-transform:uppercase;letter-spacing:1.5px;font-size:12px;color:var(--green);margin-bottom:6px}
+.booking-step strong{display:block;font-family:'Oswald';font-size:18px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.booking-step span{color:var(--muted);font-size:14px;line-height:1.45}
 .booking-options{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .booking-option{width:100%;min-height:154px;text-align:left;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);padding:20px;cursor:pointer;transition:.25s ease}
 .booking-option:hover,.booking-option.active{border-color:rgba(55,217,96,.6);background:linear-gradient(180deg,var(--bg-3),var(--bg))}
@@ -266,7 +271,7 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
   <div class="kye">Kill Your Excuses</div>
   <div class="wrap hero-inner">
     <div class="hero-tag">Athletiktraining · Zentralschweiz</div>
-    <h1 class="display">Leistungs­entwicklung<br><span class="hero-line">für <em class="grad-text">erwachsene Wettkampfsportler.</em></span></h1>
+    <h1 class="display">Leistungs­entwicklung<br><span class="hero-line">für <em class="grad-text">Kampf- und Wettkampfsportler.</em></span></h1>
     <p class="lead">Für Schwingen, Ringen, Judo und andere Kampf- und Wettkampfsportarten. Ich helfe dir, mit klarer Struktur, persönlicher Begleitung und einem zielgerichteten Plan deinen nächsten Leistungslevel zu erreichen.<span class="lead-break">Nicht durch Zufall, sondern durch ein System, das zu deinem Sport und zu deinem Werdegang passt.</span></p>
     <div class="hero-cta">
       <a href="#buchen" class="btn btn-primary">Angebote</a>
@@ -291,7 +296,7 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
   <div class="wrap">
     <div class="reveal">
       <div class="eyebrow">Für wen</div>
-      <h2 class="display who-title">Für erwachsene Wettkampfsportler</h2>
+      <h2 class="display who-title">Für Kampfsportler mit Ziel</h2>
     </div>
     <div class="who-grid reveal">
       <div class="who"><div class="ic">01</div><h3>Du stagnierst</h3><p>Du trainierst viel, aber die Fortschritte bleiben aus. Im Wettkampfsport zählt nicht nur Einsatz, sondern die richtige Struktur und die richtige Belastung.</p></div>
@@ -393,6 +398,11 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
       <div class="eyebrow">Direkt buchen</div>
       <h2 class="display booking-title">So läuft der Einstieg</h2>
       <p class="sub">Der öffentliche Buchungsweg ist bewusst einfach: kostenloses Erstgespräch, dann getrenntes Probetraining, danach Coaching.</p>
+      <div class="booking-flow" aria-label="Ablauf">
+        <div class="booking-step"><div class="k">1 · Erstgespräch</div><strong>Kostenlos</strong><span>30 Minuten per Google Meet.</span></div>
+        <div class="booking-step"><div class="k">2 · Probetraining</div><strong>CHF 150</strong><span>90 Minuten, vorab bezahlt, inkl. Eintritt.</span></div>
+        <div class="booking-step"><div class="k">3 · Coaching</div><strong>Begleitung</strong><span>Individueller Leistungsaufbau mit klarer Struktur.</span></div>
+      </div>
     </div>
     <div class="booking-grid reveal">
       <div class="booking-options" aria-label="Buchungsoptionen">
