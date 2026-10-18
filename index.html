@@ -151,7 +151,7 @@ section{position:relative}
 .offer-foot p{color:var(--muted);font-size:14px;margin-top:14px}
 
 /* ---------- booking ---------- */
-.booking{background:var(--bg-2);border-top:1px solid var(--line)}
+.booking{background:var(--bg-2);border-top:1px solid var(--line);scroll-margin-top:84px}
 .sec.booking{padding:90px 0}
 .booking-title{max-width:none;white-space:nowrap}
 .booking-grid{display:grid;gap:22px;margin-top:38px}
@@ -240,7 +240,7 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
   .system-title{white-space:normal}
   .booking-title{white-space:normal}
   .offer-body .ig{grid-template-columns:1fr}
-  .booking-options{grid-template-columns:1fr}
+  .booking-options,.booking-answers,.booking-flow,.pdf-grid{grid-template-columns:1fr}
   .booking-option{min-height:0}
   .booking-frame,.cal-inline{min-height:640px;height:640px}
   .hero-line{white-space:normal}
@@ -368,6 +368,20 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
     <div class="reveal">
       <div class="eyebrow">Direkt buchen</div>
       <h2 class="display booking-title">Hier beginnt dein Weg</h2>
+      <p class="sub">30 Minuten &middot; kostenlos &middot; unverbindlich. Hier direkt einen passenden Termin ausw&auml;hlen.</p>
+      <div class="booking-primary">
+        <a href="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen" class="btn btn-primary" target="_blank" rel="noopener">Kostenloses Erstgespräch buchen</a>
+        <p class="booking-cta-meta">30 Minuten · Google Meet · keine Verpflichtung</p>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="booking-frame">
+        <div class="cal-inline" id="my-cal-inline-kostenloses-telefongesprach-fur-allfallige-fragen"></div>
+      </div>
+      <p class="booking-fallback">Nach dem Erstgespräch schauen wir gemeinsam, ob und wie ein separates Probetraining sinnvoll ist.</p>
+      <p class="booking-fallback">Falls der Kalender nicht lädt: <a id="caldirect" href="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen" target="_blank" rel="noopener">Buchung in Cal.com öffnen</a></p>
+    </div>
+    <div class="booking-details">
       <p class="sub">In unserem Erstgespräch lernen wir uns erst einmal kennen und ich beantworte dir deine offenen Fragen. Das Gespräch dauert etwa 30 Minuten und ist vollkommen kostenlos. Du bist weder verpflichtet, anschließend etwas zu buchen, noch irgendetwas anderes. Ich will dir Klarheit geben, ob mein Angebot dir hilft oder nicht. Wenn es passt, gut. Wenn nicht, auch gut. Die Entscheidung liegt allein bei dir.</p>
       <div class="booking-answers" aria-label="Wichtige Fragen">
         <div class="booking-answer">
@@ -386,17 +400,6 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
           <p>Es ist immer eine Frage der Prioritäten. Wenn dir dein Ziel wirklich wichtig ist, findest du einen Weg. Wenn nicht, dann sind dir andere Dinge gerade wichtiger. Das ist nicht böse. Das ist einfach ehrlich. Und wenn du nicht selbst deine Prioritäten setzt, setzen sie deine Umstände.</p>
         </div>
       </div>
-      <div class="booking-primary">
-        <a href="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen" class="btn btn-primary" target="_blank" rel="noopener">Kostenloses Erstgespräch buchen</a>
-        <p class="booking-cta-meta">30 Minuten · Google Meet · keine Verpflichtung</p>
-      </div>
-    </div>
-    <div class="reveal">
-      <div class="booking-frame">
-        <div class="cal-inline" id="my-cal-inline-kostenloses-telefongesprach-fur-allfallige-fragen"></div>
-      </div>
-      <p class="booking-fallback">Nach dem Erstgespräch schauen wir gemeinsam, ob und wie ein separates Probetraining sinnvoll ist.</p>
-      <p class="booking-fallback">Falls der Kalender nicht lädt: <a id="caldirect" href="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen" target="_blank" rel="noopener">Buchung in Cal.com öffnen</a></p>
     </div>
   </div>
 </section>
