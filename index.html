@@ -248,28 +248,9 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
   .sec{padding:80px 0}
 }
 </style>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1478118944230580');
-fbq('track', 'PageView');
-</script>
-<!-- End Meta Pixel Code -->
+<script src="assets/marketing.js" defer></script>
 </head>
 <body>
-<!-- Meta Pixel fallback -->
-<noscript><img height="1" width="1" alt="" style="display:none"
-src="https://www.facebook.com/tr?id=1478118944230580&amp;ev=PageView&amp;noscript=1"
-/></noscript>
-
-
 <!-- NAV -->
 <header id="hdr">
   <div class="wrap nav">
@@ -497,6 +478,10 @@ function loadCalEvent(key){
   if(!event || event.loaded) return;
   event.loaded=true;
   Cal("init", event.namespace, {origin:"https://app.cal.com"});
+  Cal.ns[event.namespace]("on", {
+    action: "bookingSuccessfulV2",
+    callback: e => { if (window.LAMarketing) window.LAMarketing.schedule(e); }
+  });
   Cal.ns[event.namespace]("inline", {
     elementOrSelector:event.selector,
     config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"dark"},
