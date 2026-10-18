@@ -169,6 +169,7 @@ section{position:relative}
 .booking-primary .btn{padding:20px 38px}
 .booking-cta-meta{margin-top:12px;color:var(--muted);font-size:14px}
 .booking-frame{border:1px solid rgba(55,217,96,.25);border-radius:10px;overflow:hidden;background:var(--bg);min-height:690px;box-shadow:0 20px 58px rgba(0,0,0,.34);margin-top:24px}
+#buchungskalender{scroll-margin-top:96px}
 .cal-inline{width:100%;height:auto;min-height:690px;overflow:visible;background:var(--bg)}
 .is-hidden{display:none}
 .booking-fallback{margin-top:14px;color:var(--muted);font-size:14px}
@@ -370,12 +371,12 @@ footer{background:var(--bg);border-top:1px solid var(--line);padding:50px 0}
       <h2 class="display booking-title">Hier beginnt dein Weg</h2>
       <p class="sub">Du hast ambitionierte Ziele in deinem Sport? Lass uns gemeinsam herausfinden, wie du dein Athletiktraining gezielt darauf ausrichten kannst.<br><strong>30 Minuten &middot; kostenlos &middot; unverbindlich.</strong></p>
       <div class="booking-primary">
-        <a href="https://cal.com/michaelrohrer/kostenloses-telefongesprach-fur-allfallige-fragen" class="btn btn-primary" target="_blank" rel="noopener">Kostenloses Erstgespräch buchen</a>
+        <a href="#buchungskalender" class="btn btn-primary">Kostenloses Erstgespräch buchen</a>
         <p class="booking-cta-meta">30 Minuten · Google Meet · keine Verpflichtung</p>
       </div>
     </div>
     <div class="reveal">
-      <div class="booking-frame">
+      <div class="booking-frame" id="buchungskalender">
         <div class="cal-inline" id="my-cal-inline-kostenloses-telefongesprach-fur-allfallige-fragen"></div>
       </div>
       <p class="booking-fallback">Nach dem Erstgespräch schauen wir gemeinsam, ob und wie ein separates Probetraining sinnvoll ist.</p>
